@@ -1,0 +1,21 @@
+os: osx
+osx_image: xcode10
+language: node_js
+node_js: '10'
+jobs:
+  include:
+    - stage: release
+      if: tag IS present
+      before_deploy:
+      - HOMEBREW_NO_AUTO_UPDATE=1 brew install rpm
+      - yarn dist
+      deploy:
+        provider: releases
+        skip_cleanup: true
+        api_key:
+          secure: dG38ugULM2Dtj3VuOF5wnAyDBEDbd4Pd1MWcEVLUa+yz/eVUYECtdDRRRdKqHJk0o9nqsU6G57GrtXUnEauuYc5Z7nV9sYWpjGarVt4u8tsbk3PhBnbSatFcO/wJ7YXusXMMV+xx+sk2kkMvC5PWveDBHOonCm2ImX4jHF4Sba5V3NAOqbzmc219T8WlhVJPy64paf8l3jw5JQeMdLE34Qi3E4IYlZoMf61FagZvo1CFhaCtd5DPreeC7pF91sDKfwsjVhrSim2xhl282aNHEpTY0KrtIqy2SI8jvNxIwqirso4KDHehLBxUkuia+qI+PmlYxt4grHIJ6/Bpz9wRAdSYgOb1bq/f/tHCUNuoAg+TMsY3k032azclCJoPjfP0eX5LuUcRif7PwTuJbYx/TbGPjocO55AL6G83485tk4iOrYAjqCG32F2JUmJGta7qRTpzycoIaKI0fIkrLuLe/LNkmUyPzBRFJz7ObpBB+KXEi6o768USBiyxCcbDGCZCq910VB1MtsCSMmNP4jZH+neB7KsfJZS8xLDQtSqNHJrccPxyu3bELMHCyuw2vRsStfAPhPFzcDTQJEyCLsQ8I9jqjoUZzWGpH/wFbItm9OlbgsugtQPFoXVuvGa5ho5Ye6EyWQEx5sk2HxrKdS7ewxgIBfUoGxYntOLP3Q97u44=
+        keep_history: true
+        file_glob: true
+        file: dist/*
+        on:
+          tags: true
