@@ -1,7 +1,7 @@
 {
   "name": "pev-app",
   "productName": "PostgresExplainVisualizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A desktop application for PostgresExplainVisualizer",
   "author": "jbaptistetrb <jbaptistetrb@users.noreply.github.com> (https://github.com/jbaptistetrb)",
   "homepage": "https://github.com/jbaptistetrb/pev-app",
