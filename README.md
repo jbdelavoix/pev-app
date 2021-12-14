@@ -11,8 +11,8 @@ Based on [Postgres Explain Visualizer (pev)](https://github.com/AlexTatiyants/pe
 
 ## Download
 
-Please find latest releases for Windows, MacOs and Linux on the following [release page](https://github.com/jbaptistetrb/pev-app/releases/latest)
+Please find latest releases for Windows, MacOs and Linux on the following [release page](https://github.com/jbdelavoix/pev-app/releases/latest)
 
 ## Maintainers
 
-- [jbaptistetrb](https://github.com/jbaptistetrb)
+- [jbdelavoix](https://github.com/jbdelavoix)

@@ -1,10 +1,10 @@
 {
   "name": "pev-app",
   "productName": "PostgresExplainVisualizer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A desktop application for PostgresExplainVisualizer",
-  "author": "jbaptistetrb <jbaptistetrb@users.noreply.github.com> (https://github.com/jbaptistetrb)",
-  "homepage": "https://github.com/jbaptistetrb/pev-app",
+  "author": "jbdelavoix <jbdelavoix@users.noreply.github.com> (https://github.com/jbdelavoix)",
+  "homepage": "https://github.com/jbdelavoix/pev-app",
   "license": "MIT",
   "main": "src/app.js",
   "scripts": {
@@ -21,7 +21,7 @@
       "**/*",
       "build/**/*"
     ],
-    "appId": "jbaptistetrb.pev-app",
+    "appId": "jbdelavoix.pev-app",
     "mac": {
       "category": "public.app-category.productivity",
       "darkModeSupport": false
